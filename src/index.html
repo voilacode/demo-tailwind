@@ -11,72 +11,152 @@
 <body class="font-sans bg-gray-100">
 
     <!-- Navigation -->
-    <nav class="bg-gradient-to-r from-purple-600 via-purple-500 to-blue-500 p-4 text-white">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-3xl font-bold">Study Abroad</a>
-            <ul class="flex space-x-4">
-                <li><a href="#" class="hover:underline">Home</a></li>
-                <li><a href="#programs" class="hover:underline">Programs</a></li>
-                <li><a href="#about" class="hover:underline">About</a></li>
-                <li><a href="#contact" class="hover:underline">Contact</a></li>
-            </ul>
+    <nav class="p-4 text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+        <div class="container flex items-center justify-between mx-auto">
+            <a href="#" class="text-3xl font-bold md:text-4xl lg:text-5xl">Study Abroad</a>
+            <!-- Responsive Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Responsive Menu -->
+            <div id="menu" class="hidden space-x-4 md:flex">
+                <a href="#" class="hover:underline">Home</a>
+                <a href="#programs" class="hover:underline">Programs</a>
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#destinations" class="hover:underline">Destinations</a>
+                <a href="#testimonials" class="hover:underline">Testimonials</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="bg-gradient-to-r from-purple-600 via-purple-500 to-blue-500 text-white text-center py-20">
+    <header
+        class="py-12 text-center text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:py-20 lg:py-24">
         <div class="container mx-auto">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Explore the World Through Study Abroad Programs
+            <h1 class="mb-4 text-3xl font-bold md:text-5xl lg:text-6xl">Explore the World Through Study Abroad Programs
             </h1>
             <p class="text-lg md:text-xl lg:text-2xl">Broaden your horizons and immerse yourself in new cultures</p>
-            <a href="#programs"
-                class="mt-6 inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-full">View
-                Programs</a>
+            <a href="/register"
+                class="inline-block px-6 py-3 mt-6 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-600">
+                $register</a>
+            <a href="/login"
+                class="inline-block px-6 py-3 mt-6 font-bold text-white bg-green-500 rounded-full hover:bg-green-600">
+                $login</a>
         </div>
     </header>
 
     <!-- Programs Section -->
-    <section id="programs" class="py-16 bg-gray-100">
+    <section id="programs" class="py-12 bg-gray-100 md:py-16 lg:py-20">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Our Programs</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <h2 class="mb-8 text-3xl font-bold md:text-4xl lg:text-5xl">Our Programs</h2>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Program Card Example -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl md:text-2xl lg:text-3xl font-bold mb-2">Program Title</h3>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="mb-2 text-xl font-bold md:text-2xl lg:text-3xl">GRE</h3>
                     <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam eu
                         turpis tincidunt feugiat.</p>
                 </div>
-
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="mb-2 text-xl font-bold md:text-2xl lg:text-3xl">IELTS</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam eu
+                        turpis tincidunt feugiat.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="mb-2 text-xl font-bold md:text-2xl lg:text-3xl">PTE</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam eu
+                        turpis tincidunt feugiat.</p>
+                </div>
                 <!-- Repeat the above card structure for each program -->
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="bg-gradient-to-r from-blue-500 via-blue-400 to-teal-500 text-white py-16">
+    <section id="about"
+        class="py-12 text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:py-16 lg:py-20">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">About Us</h2>
+            <h2 class="mb-8 text-3xl font-bold md:text-4xl lg:text-5xl">About Us</h2>
             <p class="text-lg md:text-xl lg:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
                 quam eu turpis tincidunt feugiat.</p>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 bg-gray-100">
+    <!-- Study Destinations Section -->
+    <section id="destinations" class="py-12 bg-gray-100 md:py-16 lg:py-20">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">Contact Us</h2>
-            <p class="text-lg md:text-xl lg:text-2xl mb-8">Have questions or want more information? Reach out to us!</p>
+            <h2 class="mb-8 text-3xl font-bold md:text-4xl lg:text-5xl">Explore Exciting Study Destinations</h2>
+            <p class="text-lg md:text-xl lg:text-2xl">Discover amazing places to enhance your learning experience.</p>
+            <div class="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Destination Card Example -->
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="mb-2 text-xl font-bold md:text-2xl lg:text-3xl">USA</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam eu
+                        turpis tincidunt feugiat.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="mb-2 text-xl font-bold md:text-2xl lg:text-3xl">UK</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam eu
+                        turpis tincidunt feugiat.</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="mb-2 text-xl font-bold md:text-2xl lg:text-3xl">Australia</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam eu
+                        turpis tincidunt feugiat.</p>
+                </div>
+                <!-- Repeat the above card structure for each destination -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials"
+        class="py-12 text-white bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 md:py-16 lg:py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="mb-8 text-3xl font-bold md:text-4xl lg:text-5xl">What Students Say</h2>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Testimonial Card Example -->
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <p class="text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam eu
+                        turpis tincidunt feugiat."</p>
+                    <p class="mt-4 font-bold">- John Doe, Study Abroad Alumnus</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <p class="text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam eu
+                        turpis tincidunt feugiat."</p>
+                    <p class="mt-4 font-bold">- John Doe, Study Abroad Alumnus</p>
+                </div>
+                <div class="p-6 bg-white rounded-lg shadow-md">
+                    <p class="text-gray-600">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in quam eu
+                        turpis tincidunt feugiat."</p>
+                    <p class="mt-4 font-bold">- John Doe, Study Abroad Alumnus</p>
+                </div>
+                <!-- Repeat the above card structure for each testimonial -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-gray-100 md:py-16 lg:py-20">
+        <div class="container mx-auto text-center">
+
+            <h2 class="mb-8 text-3xl font-bold md:text-4xl lg:text-5xl">Contact Us</h2>
+            <p class="mb-8 text-lg md:text-xl lg:text-2xl">Have questions or want more information? Reach out to us!</p>
             <a href="#"
-                class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full">Contact
+                class="inline-block px-6 py-3 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-600">Contact
                 Now</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gradient-to-r from-teal-500 via-teal-400 to-green-500 text-white text-center py-4">
+    <footer class="py-4 text-center text-white text-gray-600 bg-gradient-to-r from-teal-500 via-teal-400 to-green-500">
         <p>&copy; 2024 Study Abroad. All rights reserved.</p>
     </footer>
 
-</body>
-
-</html>
+</body
